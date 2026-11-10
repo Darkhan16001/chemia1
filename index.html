@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Химия | Зат мөлшері. Мольдік масса</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <strong>⚗ CHEMISTRY</strong>
+      <small>1-КУРС • ИНТЕРАКТИВТІ ЛЕКЦИЯ</small>
+    </div>
+
+    <div class="top-right">
+      <span id="section">Химия</span>
+      <span id="clock">80:00</span>
+      <span id="counter">1 / 1</span>
+    </div>
+  </header>
+
+  <main class="main" id="main">
+    <div class="slide" id="slide"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="signature">
+      <strong>BY DARKHAN</strong>
+      <span id="slideTitle">Зат мөлшері. Мольдік масса</span>
+    </div>
+
+    <div class="navigation">
+      <button class="btn secondary" id="back">← Артқа</button>
+      <button class="btn primary" id="next">Келесі →</button>
+    </div>
+  </footer>
+</div>
+
+<!-- ОҢ ЖАҚ ТӨМЕНДЕГІ ҚҰРАЛДАР -->
+<div class="tools">
+  <button class="tool-btn" id="calcOpen">
+    🧮 Калькулятор
+  </button>
+  <button class="tool-btn green-btn" id="tableOpen">
+    ⚛ Менделеев кестесі
+  </button>
+</div>
+
+<!-- КАЛЬКУЛЯТОР -->
+<div class="calculator hidden" id="calculator">
+  <div class="modal-head">
+    <h3>Калькулятор</h3>
+    <button class="close" id="calcClose">✕</button>
+  </div>
+
+  <input id="calcDisplay" readonly>
+  <div class="calc-keys" id="calcKeys"></div>
+</div>
+
+<!-- ПЕРИОДТЫҚ КЕСТЕ -->
+<div class="overlay hidden" id="tableModal">
+  <div class="periodic-panel">
+
+    <div class="modal-head">
+      <div>
+        <h2>Менделеевтің периодтық кестесі</h2>
+        <p class="muted">
+          Элементтің таңбасын басып,
+          қазақша атауы мен массасын қара.
+        </p>
+      </div>
+
+      <button class="close" id="tableClose">✕</button>
+    </div>
+
+    <div class="legend-row">
+      <span class="legend metal">Металдар</span>
+      <span class="legend nonmetal">Бейметалдар</span>
+      <span class="legend metalloid">Жартылай металдар</span>
+      <span class="legend noble">Инертті газдар</span>
+      <span class="legend halogen">Галогендер</span>
+    </div>
+
+    <div class="periodic-scroll">
+      <div class="periodic-grid" id="periodicGrid"></div>
+    </div>
+
+    <div class="element-info" id="elementInfo">
+      Элементті таңдаңыз.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
